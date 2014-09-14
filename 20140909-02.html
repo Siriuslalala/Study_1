@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example</title>
+    <style type="text/css">
+        .class2{
+            background-color: dimgrey;
+            color:white;
+            padding:5px;
+            margin:2px;
+        }
+        .class1{
+            font-size: x-large;
+        }
+    </style>
+   </head>
+<body>
+    <p>3-17</p>
+    <!--在脚本中使用class属性  此例中用到了script元素-->
+    <a class="class1 class2"href="http://apress.com">Apress web site</a>
+    <hr/>
+    <a class="otherclass" href="http://w3c.org">W3C web site</a>
+    <script type="text/javascript">
+        var elems = document.getElementsByClassName("otherclass");
+        for ( i = 0; i < elems.length; i++ ){
+           var x = elems[i];
+            x.style.border ="thin solid black";
+            x.style.backgroundColor = "white";
+            x.style.color = "black";
+        }
+    </script>
+</body>
+</html>
