@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <p>5-12为对象添加方法</p>
+    <script type="text/javascript">
+        var  myData ={
+            name:"Sirius",
+            weather:"sunny",
+            printMessages:function(){
+                document.writeln("Hello " + this.name + ".");
+                document.writeln("Today is " + this.weather +".");
+            }
+        };
+        myData.printMessages();
+    </script>
+</body>
+</html>
