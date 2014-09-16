@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <p>5-14枚举对象属性</p>
+    <script type="text/javascript">
+        var myData = {
+            name:"Sirius",
+            weather:"sunny",
+            printMessages:function(){
+                document.writeln("Hello " + this.name + ".");
+                document.writeln("Today is " + this.weather + ".");
+            }
+        };
+        for (var prop in myData) {
+            document.writeln("Name: " + prop + " Value:" + myData[prop])
+        }
+    </script>
+</body>
+</html>
