@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example</title>
+    <meta charset="UTF-8">
+    <style>
+        h1,h2,h3{background: grey;color: white}
+        hgroup > h1{margin-bottom: 0;margin-top: 0}
+        hgroup > h2{background: grey;color: white; font-size: 1em;
+                    margin-top: 0px;margin-bottom: 2px;}
+
+        body > header *, footer > *{background:transparent;color: black;}
+        body > section,body > section >section,
+        body > section > section > section {margin-left: 10px;}
+        body > header,body > footer{
+            border: medium solid black; padding-left: 5px; margin:10px 0 10px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <p>使用header和footer元素</p>
+    <header>
+        <hgroup>
+            <h1>Things I like</h1>
+            <h2>by Sirius</h2>
+        </hgroup>
+    </header>
+    <section>
+        <header>
+            <hgroup>
+                <h1>Fruits I like</h1>
+                <h2>by Sirius</h2>
+            </hgroup>
+        </header>
+        I like apples and oranges.
+        <section>
+            <h1>Additional fruits</h1>
+            I also like bananas, mangoes,cherries.
+            <section>
+            <h1>More information</h1>
+            You can see......
+            </section>
+        </section>
+    </section>
+
+    <section>
+        <header>
+            <h1>Activities I like</h1>
+        </header>
+        <section>
+            <p>balablalblablabalbal</p>
+            <h1>Kinds of haochangyigedancia</h1>
+            There are haochangyichuan.....
+            <section>
+                <h1>buxiangdale</h1>
+                balabalabalabala
+                <ol>
+                    <li>yaozaoqi</li>
+                    <li>yaozaoshui</li>
+                    <li>duoqiaodaima</li>
+                </ol>
+            </section>
+        </section>
+    </section>
+    <footer id="mainFooter">
+        &#169;2014,Sirius.<a href="http://apress.com">Visit Apress</a>
+    </footer>
+</body>
+</html>

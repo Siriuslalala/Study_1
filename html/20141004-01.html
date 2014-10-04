@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example</title>
+    <meta charset="UTF-8">
+    <style>
+        h1,h2,h3{background: grey;color: white}
+        hgroup > h1{margin-bottom: 0;margin-top: 0}
+        hgroup > h2{background: grey;color: white; font-size: 1em;
+            margin-top: 0px;margin-bottom: 2px;}
+
+
+        body > header *, footer > *{background:transparent;color: black;}
+        body > section,body > section >section,
+        body > section > section > section {margin-left: 10px;}
+        body > header,body > footer{
+            border: medium solid black; padding-left: 5px; margin:10px 0 10px 0;
+        }
+        body > nav {text-align: center;padding-left: 2px; border:dashed thin black;}
+        body > nav > a {padding:2px ;color:black}
+    </style>
+</head>
+<body>
+<p>使用nav元素</p>
+<header>
+    <hgroup>
+        <h1>Things I like</h1>
+        <h2>by Sirius</h2>
+    </hgroup>
+    <nav>
+        <h1>Contents</h1>
+        <ul>
+            <li><a href="#fruitsilike">Fruits I like</a> </li>
+            <ul>
+                <li><a href="#morefruit">Additional Fruits</a> </li>
+            </ul>
+            <li><a href="#activitiesilike">Activities I like</a></li>
+            <ul>
+                <li><a href="#tritypes">Kinds of triathlon</a> </li>
+            </ul>
+        </ul>
+    </nav>
+</header>
+<section>
+    <header>
+        <hgroup>
+            <h1 id="fruitsilike">Fruits I like</h1>
+            <h2>How I learned to love Citrus</h2>
+        </hgroup>
+    </header>
+    I like apples and oranges.
+    <section>
+        <h1 id="morefruit">Additional fruits</h1>
+        I also like bananas, mangoes,cherries.
+        <section>
+            <h1>More information</h1>
+            You can see......
+        </section>
+    </section>
+</section>
+
+<section>
+    <header>
+        <h1 id="activitiesilike">Activities I like</h1>
+    </header>
+    <section>
+        <p>balablalblablabalbal</p>
+        <h1 id="tritypes">Kinds of haochangyigedancia</h1>
+        There are haochangyichuan.....
+        <section>
+            <h1>buxiangdale</h1>
+            balabalabalabala
+            <ol>
+                <li>yaozaoqi</li>
+                <li>yaozaoshui</li>
+                <li>duoqiaodaima</li>
+            </ol>
+        </section>
+    </section>
+</section>
+<nav>
+    More information:
+    <a href="http://fruit.org">Learn More About Fruit</a>
+    <a href="http://triathlon.org">Learn More About Triathlons</a>
+</nav>
+<footer id="mainFooter">
+    &#169;2014,Sirius.<a href="http://apress.com">Visit Apress</a>
+</footer>
+</body>
+</html>

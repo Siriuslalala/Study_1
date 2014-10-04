@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example</title>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            counter-reset: OuterItemCount 5 InnerItemCount;
+        }
+        #outerlist > li:before{
+            content: counter(OuterItemCount) ".";
+            counter-increment: OuterItemCount 2;
+        }
+        ul.innerlist > li:before{
+            content:counter(InnerItemCount,lower-alpha)".";
+            counter-increment: InnerItemCount;
+        }
+    </style>
+</head>
+<body>
+    <p>带自定义计数器的嵌套列表</p>
+    </br>
+    I like apples and oranges.
+    I also like:
+    <ul id="outerlist" style="list-style-type: none">
+        <li>bananas</li>
+        <li>mangoes,including:</li>
+            <ul class="innerlist">
+                <li>Haden mangoes</li>
+                <li>Keitt mangoes</li>
+                <li>Kent mangoes</li>
+            </ul>
+        <li>cherries</li>
+        <li>plums,including:
+            <ul class="innerlist">
+                <li>Elephant Heart plums</li>
+                <li>Stanley plums</li>
+                <li>Seneca plums</li>
+            </ul>
+        </li>
+        <li>peaches</li>
+        <li>grapes</li>
+    </ul>
+</body>
+</html>
