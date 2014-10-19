@@ -1,0 +1,695 @@
+@newsActiveColor: #8bb1db;
+@newsColor:#8db3db;
+@leftColor:#8cb2dc;
+@rightColor:#7ea3c8;
+
+html{
+    height:100%;
+}
+body{
+    background: url("") repeat;
+    min-width: 1200px;
+}
+header{
+    position: fixed;
+    height: 50px;
+    background: url("") repeat;
+    width: 100%;
+    z-index: 11;
+}
+header >*{
+    float: left;
+}
+header img{
+    margin: 15px 40px 0 100px;
+}
+#search{
+    position: relative;
+}
+#search input{
+    border: none;
+    background-color: #64cac9;
+    color: #ffffff;
+    height: 30px;
+    width: 220px;
+    margin: 10px auto;
+    border-radius: 5px;
+    padding: 0 30px 0 10px;
+}
+#search input:focus{
+    outline: none;
+}
+#search button{
+    background: url("");
+    width: 21px;
+    height: 19px;
+    border: none;
+    position: absolute;
+    right: 5px;
+    top: 15px;
+}
+#search button:focus{
+    outline: none;
+}
+header ul{
+    float: right;
+    list-style: none;
+    margin: 15px 40px;
+}
+header ul li{
+    float: left;
+    width: 40px;
+    text-align: center;
+    font-size: 14px;
+}
+header ul li:first-child{
+    border-right:1px solid #000000;
+}
+
+nav{
+    position: fixed;
+    width: 64px;
+    background-color: #000000;
+    opacity: 0.7;
+    height: 100%;
+    top: 50px;
+    z-index: 2;
+}
+
+nav ul{
+    list-style: none;
+    font-size: 10px;
+    padding-left: 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+nav ul li{
+    height: 55px;
+}
+
+nav ul li:hover{
+    background-color: #656565;
+    cursor: pointer;
+}
+
+nav ul li:first-child{
+    padding-top: 5px;
+    height: 45px;
+}
+
+nav ul li:first-child:hover{
+    background: #000000;
+}
+
+nav ul li i{
+    display: block;
+    width: 33px;
+    height: 35px;
+    margin: 5px 15px 0 15px;
+    background: url("") no-repeat;
+}
+
+#labNav{
+    background-position: 0 -40px;
+}
+
+#newsNav{
+    background-position: 0 -90px;
+}
+
+#teamNav{
+    background-position: 0 -140px;
+}
+
+#researchNav{
+    background-position: 0 -190px;
+}
+
+#achievementNav{
+    background-position: 0 -240px;
+}
+
+#instrumentNav{
+    background-position: 0 -290px;
+}
+
+#docNav{
+    background-position: 0 -340px;
+}
+
+#jobNav{
+    background-position: 0 -395px;
+}
+
+#content{
+    position: relative;
+    top: 50px;
+    z-index: 1;
+}
+#intro{
+    background: url("");
+    background-size: 100% 450px;
+    height: 450px;
+    color: #ffffff;
+}
+
+#school{
+    width: 165px;
+    height: 90px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+#school *{
+    float: left;
+}
+
+#school p{
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#lab{
+    font-size: 36px;
+    text-align: center;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+#research{
+    width: 366px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+#research > *{
+    float: left;
+}
+#research p{
+    font-size: 14px;
+    padding-right: 20px;
+    border-right: 1px solid white;
+}
+#research ul{
+    padding-left: 20px;
+}
+#research ul li{
+    list-style: none;
+    float: left;
+    width: 50px;
+}
+#professor{
+    width: 420px;
+    margin: 60px auto;
+}
+#professor>*{
+    float: left;
+}
+#professor img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 5px solid #676767;
+}
+#professor ul{
+    list-style: none;
+    padding-left: 0;
+    margin-left: 35px;
+}
+#proInfo{
+    font-size: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffffff;
+    margin-top: 5px;
+}
+#proInfo li{
+    height: 22px;
+}
+#proInfo li:first-child{
+    font-size: 14px;
+}
+#proInfo li:first-child span{
+    font-size: 16px;
+    font-weight: bold;
+}
+#proInfo span{
+    margin-right: 10px;
+}
+#proAchievement > *{
+    float: left;
+    width: 33%;
+}
+#proAchievement li b{
+    font-size: 15px;
+    font-weight: bold;
+}
+#proAchievement li p{
+    font-size: 12px;
+}
+
+.section{
+    border-bottom: 1px solid #cfcfcf;
+    padding-bottom: 50px;
+}
+
+#news{
+    width: 90%;
+    margin: 5%;
+}
+#newsTitle{
+    background: url("");
+    width: 81px;
+    height: 81px;
+    margin: 40px auto 40px;
+}
+#newsArea{
+    width: 100%;
+    height: 240px;
+}
+#newsArea>*{
+    float: left;
+}
+#newsPic{
+    width: 40%;
+    height: 240px;
+}
+#newsPic img{
+    display: block;
+    width: 90%;
+    height: 240px;
+    margin: 0 auto;
+}
+#newsPic p{
+    display: block;
+    margin:0 auto;
+    width: 90%;
+    position: relative;
+    top: -30px;
+    height: 30px;
+    background-color: #000000;
+    opacity: 0.8;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 30px;
+    padding-left: 5px;
+}
+#newsList{
+    width: 60%;
+    padding-left: 0;
+    list-style: none;
+}
+#newsList li{
+    height: 40px;
+    clear: both;
+}
+#newsList li > *{
+    float: left;
+}
+#newsList li img{
+    visibility: hidden;
+    width: 11px;
+    height: 25px;
+    margin-right: 15px;
+}
+#newsList .blueCircle{
+    width: 8px;
+    height: 8px;
+    background-color:@newsColor;
+    border-radius: 50%;
+    margin:5px 30px 0 22px;
+}
+#newsList li>div:last-child{
+    width: 80%;
+}
+#newsList .title{
+    color: @newsColor;
+}
+#newsList .newsTime{
+    float: right;
+    color: #a3a3a3;
+}
+#newsList .article{
+    display: none;
+    color: #b3b3b3;
+    font-size: 12px;
+    margin-top:10px;
+    height: 60px;
+}
+#newsList a{
+    display: none;
+    float: right;
+    color: #bbbbbb;
+}
+#newsList a:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+.newActive{
+    height: 130px !important;
+}
+.newActive img{
+    visibility: visible !important;
+    position: relative;
+    top: 10px;
+}
+.newActive .blueCircle{
+    background: url("") -100px -100px;
+    width: 50px !important;
+    height: 50px !important;
+    background-color: transparent !important;
+    margin: 0 10px 0 0 !important;
+}
+.newActive .article{
+    display: block !important;
+}
+.newActive a{
+    display: block !important;
+}
+.newActive div:last-child{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+#otherArea{
+    width: 96%;
+    height: 250px;
+    margin: 60px auto 50px;
+    color: #ffffff;
+}
+#otherArea h2{
+    font-size: 28px;
+}
+#otherArea p{
+    font-size: 18px;
+}
+#otherArea a{
+    font-size: 12px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 20px;
+}
+.lecInfo{
+    margin:5px auto;
+    font-size: 14px !important;
+}
+.lecAddress{
+    margin-top: 25px;
+}
+.lecAddress span{
+    padding-left: 14px;
+}
+.lecInfo span{
+    font-size: 18px;
+}
+#otherArea a:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+.lecTime{
+    font-size: 18px;
+    margin-left: 20px;
+}
+#announcement{
+    width: 50%;
+    float: left;
+    position: relative;
+}
+#annoTitle{
+    background: url("") -174px 0;
+    width: 81px;
+    height: 81px;
+    position: absolute;
+    left: 37%;
+    top: -40px;
+}
+#announcement .leftBlock{
+    float: left;
+    width: 42%;
+    margin-right: 5%;
+    background-color: @leftColor;
+    height: 260px;
+    padding: 15px;
+}
+#announcement .rightBlock{
+    float: left;
+    width: 42%;
+    margin-right: 11%;
+    background-color: @rightColor;
+    height: 260px;
+    padding: 15px;
+}
+#lecTitle{
+    background: url("") -262px 0;
+    width: 81px;
+    height: 81px;
+    position: absolute;
+    left: 48%;
+    top: -40px;
+}
+#lecture{
+    width: 50%;
+    float: left;
+    position: relative;
+}
+#lecture .leftBlock{
+    float: left;
+    width: 42%;
+    margin-left: 11%;
+    background-color:@leftColor;
+    height: 260px;
+    padding: 15px;
+}
+#lecture .rightBlock{
+    float: left;
+    width: 42%;
+    margin-left: 5%;
+    background-color:@rightColor;
+    height: 260px;
+    padding: 15px;
+}
+#paper{
+    width:90%;
+    margin:5%;
+}
+#paperTitle{
+    background: url("");
+    width:81px ;
+    height:81px;
+    margin:40px auto 40px;
+}
+
+#paperArea{
+    width: 100%;
+    height: 240px;
+}
+#paperArea>*{
+    float: left;
+}
+#paperPic{
+    width:50%;
+    height:240px
+}
+#paperPic img{
+    display: block;
+    margin: 0 auto;
+    width: 259px;
+    height:  177px;
+}
+#paperList{
+    width: 45%;
+    padding-left: 0px;
+    list-style: none;
+}
+#paperList li{
+    height:56px;
+    clear: both;
+    margin-bottom: 20px;
+}
+.paperTitle{
+    color:#535353;
+    font-size:14px;
+}
+.paperIntro{
+    color:#bfbfbf;
+    font-size:12px;
+}
+.paperAuthor{
+    color:#535353;
+    font-size:14px;
+    float:right;
+}
+.paperTime{
+    color:#bfbfbf;
+    font-size:12px;
+    float:right;
+}
+
+#patent{
+    width:90%;
+    margin:5%;
+}
+#patentTitle{
+    background: url("") 0 -110px ;
+    width:81px ;
+    height:85px;
+    margin:40px auto 40px;
+}
+
+#patentArea{
+    width: 100%;
+    height: 240px;
+}
+#patentArea>*{
+    float: left;
+}
+
+#patentList{
+    width: 55%;
+    padding-left: 180px;
+    list-style: none;
+}
+#patentList li{
+    height:56px;
+    clear: both;
+    margin-bottom: 20px;
+}
+#patentPic{
+    width:40%;
+    height:240px
+}
+#patentPic img{
+    display: block;
+    margin: 0 auto;
+    width: 259px;
+    height:  177px;
+}
+#patentList li p{
+    color: #bfbfbf;
+    font-size: 12px;
+}
+.patentTitle{
+    color:#535353;
+    font-size: 14px;
+}
+#patentList li span{
+    padding-right: 40px;
+}
+
+#service{
+    width: 90%;
+    margin: 5%;
+    position: relative;
+}
+
+#serviceTitle{
+    background: url("") ;
+    width:151px ;
+    height:123px;
+    position: absolute;
+    top: -25px;
+    left: 65%;
+}
+#serviceBlock{
+    width: 70%;
+    float: left;
+}
+.serviceBlock{
+    float: left;
+    width: 27%;
+    margin: 20px 3%;
+    height: 230px;
+    background-color: #eae8f3;
+}
+.serviceBlock img{
+    width: 140px;
+    margin: 20px auto 0;
+    display: block;
+}
+.serviceName{
+    font-size: 18px;
+    color: #535353;
+    margin: 15px 15px 5px 15px;
+}
+.serviceStatus{
+    font-size: 14px;
+    color: #aaaaac;
+    margin: 5px 15px 15px 15px;
+}
+#service ul{
+    float: left;
+    clear: right;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 150px;
+    font-size: 22px;
+    color: #929292;
+    position: absolute;
+}
+#serviceHr{
+    position: relative;
+    border-right: 1px solid #e7e5f0;
+    width: 1px;
+    height: 425px;
+    top: 95px;
+}
+#service ul li{
+    height: 50px;
+}
+.greyCircle{
+    background-color: #e6e4ef;
+    width: 16px !important;
+    height: 16px !important;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 40px;
+}
+#job{
+    height: 250px;
+    width: 90%;
+    margin: 5% 5% 0 5%;
+}
+.jobTitle{
+    background: url("") 0 -220px ;
+    width:81px ;
+    height:85px;
+    margin:40px auto 40px;
+}
+#job ul li{
+    float: left;
+    width: 25%;
+    list-style: none;
+    padding-left: 10px;
+    border-left: 5px solid #00d1da;
+    color: #b0b0b0;
+}
+.jobs{
+    font-size: 20px;
+    padding-right: 10px;
+}
+.jobNumber{
+    font-size: 20px;
+    padding-right: 20px;
+}
+.jobRequire{
+    font-size: 14px;
+}
+footer{
+    background-color: #c6eeee;
+    margin-top:50px;
+    text-align: center;
+    color: #9eacad;
+    font-weight: bold;
+    font-size: 22px;
+}
+footer p:first-child{
+    padding-top: 40px;
+}
+footer p:last-child{
+    padding-bottom: 40px;
+}
+footer p{
+    margin-bottom: 0;
+}
